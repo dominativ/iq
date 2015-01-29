@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.ttiq.app" version="1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>IQ Training and Testing</name>
+    <name>IQ Training & Testing</name>
     <description>
-        IQ Training and Testing
+        IQ Training & Testing
     </description>
     <author email="info@ttiq.net">
         ttiq
@@ -20,25 +20,15 @@
 <gap:plugin name="NetworkStatus" value="org.apache.cordova.core.NetworkManager" />
 </plugins>
 
-<feature name="Device">
-        <param name="ios-package" value="CDVDevice" />
-    </feature>
-<feature name="NetworkStatus">
-    <param name="ios-package" value="CDVConnection" />
-</feature>
-<feature name="InAppBrowser">
-    <param name="ios-package" value="CDVInAppBrowser" />
-</feature>
 
 
-
+	<preference name="splash-screen-duration" value="10000"/>
     <preference name="orientation" value="landscape" />
     <preference name="target-device" value="tablet" />
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
     <preference name="prerendered-icon" value="true" />
     <preference name="stay-in-webview" value="false" />
-    <preference name="ios-statusbarstyle" value="black-opaque" />
     <preference name="detect-data-types" value="true" />
     <preference name="exit-on-suspend" value="true" />
     <preference name="show-splash-screen-spinner" value="true" />
@@ -47,24 +37,22 @@
 
     <icon src="icon.png" gap:role="default" />
 	
-    <icon gap:platform="ios" height="40" src="res/screen/ios/icon-40.png" width="40" /> 
-    <icon gap:platform="ios" height="80" src="res/screen/ios/icon-40-2x.png" width="80" /> 
-    <icon gap:platform="ios" height="29" src="res/screen/ios/icon-29.png" width="29" />
-	<icon gap:platform="ios" height="58" src="res/screen/ios/icon-29-2x.png" width="58" />
-    <icon gap:platform="ios" height="76" src="res/screen/ios/icon-76.png" width="76" /> 
-    <icon gap:platform="ios" height="152" src="res/screen/ios/icon-76-2x.png" width="152" />
-    <icon gap:platform="ios" height="60" src="res/screen/ios/icon-60.png" width="60" />
-    <icon gap:platform="ios" height="120" src="res/screen/ios/icon-60-2x.png" width="120" /> 	 
-		 		  		  
-    <icon gap:platform="ios" height="57" src="res/screen/ios/icon-57.png" width="57" />
-    <icon gap:platform="ios" height="72" src="res/screen/ios/icon-72.png" width="72" />
-    <icon gap:platform="ios" height="114" src="res/screen/ios/icon-57-2x.png" width="114" />
-    <icon gap:platform="ios" height="144" src="res/screen/ios/icon-72-2x.png" width="144" />
+    <icon gap:density="ldpi" gap:platform="android" src="res/icon/android/icon-36-ldpi.png" />
+    <icon gap:density="mdpi" gap:platform="android" src="res/icon/android/icon-48-mdpi.png" />
+    <icon gap:density="hdpi" gap:platform="android" src="res/icon/android/icon-72-hdpi.png" />
+    <icon gap:density="xhdpi" gap:platform="android" src="res/icon/android/icon-96-xhdpi.png" />
+
+    <gap:splash gap:density="ldpi" gap:platform="android" src="res/screen/android/screen-ldpi-portrait.png" />
+    <gap:splash gap:density="mdpi" gap:platform="android" src="res/screen/android/screen-mdpi-portrait.png" />
+    <gap:splash gap:density="hdpi" gap:platform="android" src="res/screen/android/screen-hdpi-portrait.png" />
+    <gap:splash gap:density="xhdpi" gap:platform="android" src="res/screen/android/screen-xhdpi-portrait.png" />
 	
-    <gap:splash gap:platform="ios" height="2048" src="res/screen/ios/screen-ipad-portrait-2x.png" width="1536" />
-    <gap:splash gap:platform="ios" height="1536" src="res/screen/ios/screen-ipad-landscape-2x.png" width="2048" />		
-    <gap:splash gap:platform="ios" height="1024" src="res/screen/ios/screen-ipad-portrait.png" width="768" />
-    <gap:splash gap:platform="ios" height="768" src="res/screen/ios/screen-ipad-landscape.png" width="1024" />
+	<gap:splash src="res/screen/android/screen-ldpi-landscape.png"  gap:platform="android" gap:density="land-ldpi" />
+	<gap:splash src="res/screen/android/screen-mdpi-landscape.png"  gap:platform="android" gap:density="land-mdpi" />
+	<gap:splash src="res/screen/android/screen-hdpi-landscape.png"  gap:platform="android" gap:density="land-hdpi" />
+	<gap:splash src="res/screen/android/screen-xhdpi-landscape.png" gap:platform="android" gap:density="land-xhdpi" />
+
+
    
     <plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
 <access origin="*" browserOnly="true"/>
