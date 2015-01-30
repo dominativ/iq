@@ -21,7 +21,7 @@
 </plugins>
 
 
-
+<preference name="android-minSdkVersion" value="11" />
 	<preference name="splash-screen-duration" value="10000"/>
     <preference name="orientation" value="landscape" />
     <preference name="target-device" value="tablet" />
